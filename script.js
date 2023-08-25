@@ -3,12 +3,11 @@
 const element = document.getElementById('level');
 
 // Initialize the DOM level to 0
-const domLevel = 0;
+const n = 0;
 
-// Traverse up the DOM hierarchy while there's a parent element
 while (element.parentNode) {
     element = element.parentNode;
-    domLevel++;
+    n++;
 }
 
-alert('The level of the element is: ' + domLevel);
+alert('The level of the element is: ' + n);
